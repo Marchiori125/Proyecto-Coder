@@ -11,7 +11,6 @@
 }
 
 .main__header{
-    width: 100vw;
     height: 10vw;
     display: grid;
     grid-template-columns: 25rem 3fr;
@@ -89,7 +88,7 @@
 
 .main__home{
     display: grid;
-    width: 100vw;
+    width: 99.1vw;
     height: 45vw;
     grid-template-columns: 1fr 1fr;
 }
@@ -111,7 +110,7 @@
 }
 
 .robotcripto{
-    margin-left: 15vw;
+    margin-left: 11vw;
     animation-name: float;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
@@ -122,7 +121,7 @@
     position: absolute;
     width: 45rem;
     height: 45rem;
-    margin:0 0 5vw 4vw;
+    margin:0 0 5vw 0;
 }
 
 .fondo__cripto-2{
@@ -162,20 +161,20 @@
     transition: all 1s;
 }
 
-.home__tablacriptos-vivo{
-    padding: 10vh;
-}
-
 .home__rectangulo__tabladecriptos{
     display: grid;
-    margin: 2vw 0 0 27vw;
-    width: 479.58px;
+    margin: 2vw 0 0 35vw;
+    width: 450px;
     height: 237.75px;
     background: rgba(0, 0, 0, 0.83);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 22px;
     transform: matrix(1, 0, -0.08, 1, 0, 0);    
     z-index: 2;
+}
+
+.tokens{
+    margin: 0.8vw 0 0 3vw;
 }
 
 /* Termina Menu Home */
@@ -185,7 +184,7 @@
     position: absolute;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    width: 100vw;
+    width: 99.1vw;
     height: 50vw;
 }
 
@@ -196,7 +195,6 @@
 }
 
 .mercado__nfts{
-    padding: 1vw 0 0 14vw;
     width: 424px;
     height: 98px;
     font-weight: 400;
@@ -204,13 +202,34 @@
     line-height: 73px;
 }
 
+
 .contenido__principal__rectangulo__mercadonfts{
+    display: grid;
+    grid-template-areas:
+    "card01 card02"
+    "card03 card04";
+    grid-template-rows: 23.7vw 23.7vw;
+    grid-template-columns: 19.8vw 19.8vw;
     margin: 0 0 0 8vw;
     width: 762.38px;
     height: 905px;
     background: rgba(0, 0, 0, 0.76);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 22px;
+    overflow: scroll;
+}
+.contenido__principal__rectangulo__mercadonfts::-webkit-scrollbar{
+    width: 0;
+}
+
+.mercado__nfts{
+    position: absolute;
+    width: 424px;
+    height: 98px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 73px;
+    margin: 1vw 0 0 15vw;
 }
 
 .card-1{
@@ -218,10 +237,47 @@
     justify-content: center;
     grid-template-rows: 1fr 1fr 1fr;
     width: 300px;
-    height: 400px;
+    height: 420px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 22px;
-    margin: 0 0 0 3vw;
+    margin: 8vw 0 0 3vw;
+    grid-area: card01;
+}
+
+.card-2{
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 300px;
+    height: 420px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 22px;
+    margin: 8vw 0 0 2vw;
+    grid-area: card02;
+}
+
+.card-3{
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 300px;
+    height: 420px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 22px;
+    margin: 8vw 0 0 3vw;
+    grid-area: card03;
+}
+
+.card-4{
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 300px;
+    height: 420px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 22px;
+    margin: 8vw 0 0 2vw;
+    grid-area: card04;
 }
 
 .card-image{
@@ -246,11 +302,13 @@
 
 .card-button{
     display: grid;
-    margin: 0 0 0 4.5vw;
+    margin: 0.5vw 0 0 4.5vw;
     width: 6vw;
     height: 1.5vw;
     border-radius: 20px;
-    background-color: rgba(255, 109, 3, 0.6);
+    background-color: rgba(0, 0, 0, 0.76);
+    color: #FFFFFF;
+    border-width: 0;
 }
 
 .mercado__cripto{
@@ -271,6 +329,12 @@
     border-radius: 22px;    
 }
 
+.contenido__principal__tablacripto{
+    width: 30vw;
+    height: 30vw;
+    margin: -7vw 0 0 3.5vw;
+}
+
 .amigos{
     padding: 1vw 0 0 15vw;
     width: 424px;
@@ -281,6 +345,8 @@
 }
 
 .rectangulo__amigos{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     margin: 0 0 0 8vw;
     width: 667.08px;
     height: 434.05px;
@@ -288,6 +354,27 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 22px;   
 }
+
+.card__amigo{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 573px;
+    height: 71px;
+    background: linear-gradient(180deg, rgba(106, 185, 236, 0.7) 27.43%, rgba(255, 255, 255, 0) 171.71%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: matrix(1, 0, -0.08, 1, 0, 0);
+    margin: -1vw 0 0 2.8vw;
+}
+
+.card__amigo__image{
+    margin: 0.2vw 0 0 2.5vw;
+}
+
+.card__amigo__info{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
 /* Termina Contenido Principal */
 /* Empieza Menu Ganancias */
 .menu__ganancias{
