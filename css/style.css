@@ -2,690 +2,1571 @@
     margin: 0;
     padding: 0;
 }
-/* Empieza Menu de Navegacion */
+
 #menu__inicio{
     background-color: #2750aa;
     font-family: 'Quicksand', sans-serif;
     color: #FFFFFF;
+    }
+    
+    /* empieza menu navegacion */
+    .main__header{
+        height: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-}
+    .menu__nav{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style-type: none;
+        margin: 12vw 0 0 -10vw;
+        gap: 5vw;
+    }
 
-.main__header{
-    height: 10vw;
-    display: grid;
-    grid-template-columns: 25rem 3fr;
-    justify-content: space-around;
-    align-items: center;
-}
+    .menu__nav li a{
+        color: #FFFFFF;
+        background: rgba(255, 109, 3, 0.6);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        text-decoration: none;
+        border-radius: 22px;
+        margin: 0 0 0 -5vw;
+    }
 
-.menu__nav{
-    display: grid;
-    grid-template-columns: repeat(5, 15rem);
-    margin-top: 25px;
-}
+    .menu__nav__inicio {
+        padding: 5px 25px;
+    }
+    
+    .menu__nav__mercadocripto {
+        padding: 5px 8px;
+    }
+    
+    .menu__nav__mercadonfts {
+        padding: 5px 8px;
+    }
+    
+    
+    .menu__nav__misganancias {
+        padding: 5px 8px;
+    }
+    
+    
+    
+    .menu__nav__amigos {
+        padding: 5px 25px;
+    }
 
-.menu__nav li{
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 22px;
-    text-align: center;
-    list-style-type: none;
-    z-index: 1;
-}
+    /* termina menu navegacion */
+    /* Empieza Menu Home */
 
-.menu__nav li a{
-    color: #FFFFFF;
-    background: rgba(255, 109, 3, 0.6);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    text-decoration: none;
-    border-radius: 22px;
-}
+    .main__home{
+        display: grid;
+        width: 100%;
+        height: 45vw;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .robotcripto{
+        animation-duration: 10s;
+        width: 200px;
+        height: 200px;
+        margin: 10vw 0 0 18vw;
+    }
+    
+    .fondo__cripto-1{
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        margin:60px 0 0 75px;
+        z-index: -1;
+    }
+    
+    .fondo__cripto-2{
+        position: absolute;
+        width: 12rem;
+        height: 12rem;
+        margin: 15vw 0 0 0;
+    }
+    
+    .home__frase{
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        font-size: 15px;
+        line-height: 25px;
+        margin: 30vw 0 0 10vw;
+        z-index: 1;
+    }
 
-.menu__nav a:hover{
-    background-color: #c9150f;
-    border-radius: 22px;
-    transition: all 1.5s;
-}
+    .home__nombre{
+        position: absolute;
+        width: 120px;
+        height: 18px;
+        color: #FFFFFF;
+        font-size: 10px;
+        padding-top: 1vw;
+        text-align: center;
+        border-radius: 22px;
+        margin: 45vw 0 0 18vw;
+        background: rgba(255, 109, 3, 0.6);
+        z-index: 1;
+    }
 
+    .home__rectangulo__tabladecriptos{
+        display: none;
+    }
+/* termina menu home */
+/* empieza contenido principal */
+    .contenido__principal{
+        position: absolute;
+        display: grid;
+        width: 100%;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-top: 20vw;
+    }
+    
+    .mercado__nfts{
+        width: 100px;
+        height: 100px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 50px;
+    }
+    
+    
+    .contenido__principal__rectangulo__mercadonfts{
+        display: grid;
+        grid-template-areas:
+        "title"
+        "card01"
+        "card02"
+        "card03"
+        "card04"
+        ;
+        width: 300px;
+        height: 300px;
+        background: rgba(0, 0, 0, 0.76);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 22px;
+        overflow: scroll;
+        margin: 3vw 0 0 6vw;
+        padding: 0 0 0 12vw;
+    }
+    .contenido__principal__rectangulo__mercadonfts::-webkit-scrollbar{
+        width: 0;
+    }
+    
+    .mercado__nfts{
+        width: 424px;
+        height: 65px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 73px;
+        margin: -2vw 0 0 14vw;
+        grid-area: title;
+    }
+    
+    .card-1{
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 200px;
+        height: 200px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 22px;
+        margin: -1vw 0 0 3vw;
+        grid-area: card01;
+    }
+    
+    .card-2{
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 200px;
+        height: 200px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 22px;
+        margin: 3vw 0 0 2vw;
+        grid-area: card02;
+    }
+    
+    .card-3{
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 200px;
+        height: 200px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 22px;
+        margin: 3vw 0 0 3vw;
+        grid-area: card03;
+    }
+    
+    .card-4{
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 200px;
+        height: 200px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 22px;
+        margin: 3vw 0 0 2vw;
+        grid-area: card04;
+    }
+    
+    .card-image{
+        margin: 1vw 0 0 0;
+        width: 160px;
+        height: 160px;
+    }
+    
+    .card-info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .card-title{
+        display: grid;
+        margin: 0.5vw 0 0 0.5vw;
+        font-size: 15px;
+    }
+    
+    .card-price{
+        display: grid;
+        justify-content: end;
+        margin: 0.5vw 0 0 0.5vw;
+        font-size: 15px;
+    }
+    
+    .card-button{
+        display: grid;
+        margin: 0.5vw 0 0 15vw;
+        width: 15vw;
+        height: 3vw;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.76);
+        color: #FFFFFF;
+        border-width: 0;
+        font-size: 8px;
+    }
 
-.menu__nav__inicio {
-    padding: 10px 55px;
-}
+    .mercado__cripto{
+        position: absolute;
+        width: 500px;
+        height: 80px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 73px;
+        margin: -3vw 0 0 25vw;
+    }
+    
+    .rectangulo__mercado__cripto{
+        width: 300px;
+        height: 200px;
+        background: rgba(0, 0, 0, 0.76);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 22px;   
+        margin: -25vw 0 0 6vw;
+    }
+    
+    .contenido__principal__tablacripto{
+        width: 80vw;
+        height: 50vw;
+        margin: 10vw 0 0 2vw;
+    }
+    
+    .amigos{
+        margin: -4vw 0 0 30vw;
+        width: 424px;
+        height: 98px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 73px;
+    }
+    
+    .rectangulo__amigos{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        width: 300px;
+        height: 300px;
+        background: rgba(0, 0, 0, 0.76);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 22px;  
+        margin: 5vw 0 0 7vw;
+    }
+    
+    .card__amigo{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        width: 250px;
+        height: 65px;
+        background: linear-gradient(180deg, rgba(106, 185, 236, 0.7) 27.43%, rgba(255, 255, 255, 0) 171.71%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        transform: matrix(1, 0, -0.08, 1, 0, 0);
+        margin: -8vw 0 0 6vw;
+    }
+    
+    .card__amigo__image{
+        margin: 2vw 0 0 4vw;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .card__amigo__info{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        font-size: 15px;
+    }
+    /* termina contenido principal */
+    /* empieza menu ganancias */
 
-.menu__nav__mercadocripto {
-    padding: 10px 15px;
-}
-
-.menu__nav__mercadonfts {
-    padding: 10px 15px;
-}
-
-
-.menu__nav__misganancias {
-    padding: 10px 15px;
-}
-
-
-
-.menu__nav__amigos {
-    padding: 10px 55px;
-}
-
-
-
-.menu__inicio__logo{
-    position: absolute;
-    width: 240px;
-    height: 240px;
-    top: 1rem;
-    z-index: 1;
-}  
-
-
-/* Termina Menu de Navegacion */
-
-/* Empieza Menu Home */
-
-.main__home{
-    display: grid;
-    width: 99.1vw;
-    height: 45vw;
-    grid-template-columns: 1fr 1fr;
-}
-
-.main__home__fraseynombre-tabladecriptos{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
-
-.home__rectangulo__robotcripto{
-    display: grid;
-    justify-content: center;
-    width: 427.23px;
-    height: 528.56px;
-    background: rgba(0, 0, 0, 0.95);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 22px;
-    transform: matrix(1, 0, -0.08, 1, 0, 0);
-}
-
-.robotcripto{
-    margin-left: 11vw;
-    animation-name: float;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 10s;
-}
-
-.fondo__cripto-1{
-    position: absolute;
-    width: 45rem;
-    height: 45rem;
-    margin:0 0 5vw 0;
-}
-
-.fondo__cripto-2{
-    position: absolute;
-    width: 65rem;
-    height: 65rem;
-    margin: -10vw 0 0 0;
-}
-
-.home__frase{
-    position: absolute;
-    width: 619px;
-    height: 228px;
-    font-size: 45px;
-    line-height: 73px;
-    margin: 5vw 0 0 20vw;
-
-}
-
-.home__nombre{
-    position: absolute;
-    width: 350px;
-    height: 45px;
-    color: #FFFFFF;
-    font-size: 30px;
-    text-align: center;
-    border-radius: 22px;
-    margin: 18rem 0 0 25vw;
-    background: rgba(255, 109, 3, 0.6);
-    z-index: 1;
-}
-
-.home__nombre:hover{
-    transform: translate(0,-20px) scale(1);
-    background-color: #c9150f;
-    border-radius: 22px;
-    transition: all 1s;
-}
-
-.home__rectangulo__tabladecriptos{
-    display: grid;
-    margin: 2vw 0 0 35vw;
-    width: 450px;
-    height: 237.75px;
-    background: rgba(0, 0, 0, 0.83);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 22px;
-    transform: matrix(1, 0, -0.08, 1, 0, 0);    
-    z-index: 2;
-}
-
-.tokens{
-    margin: 0.8vw 0 0 3vw;
-}
-
-/* Termina Menu Home */
-
-/* Empieza contenido principal */
-.contenido__principal{
-    position: absolute;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    width: 99.1vw;
-    height: 50vw;
-}
-
-.contenido__principal__mercadocripto-amigos{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    row-gap: 1fr;
-}
-
-.mercado__nfts{
-    width: 424px;
-    height: 98px;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 73px;
-}
-
-
-.contenido__principal__rectangulo__mercadonfts{
-    display: grid;
-    grid-template-areas:
-    "card01 card02"
-    "card03 card04";
-    grid-template-rows: 23.7vw 23.7vw;
-    grid-template-columns: 19.8vw 19.8vw;
-    margin: 0 0 0 8vw;
-    width: 762.38px;
-    height: 905px;
-    background: rgba(0, 0, 0, 0.76);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 22px;
-    overflow: scroll;
-}
-.contenido__principal__rectangulo__mercadonfts::-webkit-scrollbar{
-    width: 0;
-}
-
-.mercado__nfts{
-    position: absolute;
-    width: 424px;
-    height: 98px;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 73px;
-    margin: 1vw 0 0 15vw;
-}
-
-.card-1{
-    display: grid;
-    justify-content: center;
-    grid-template-rows: 1fr 1fr 1fr;
-    width: 300px;
-    height: 420px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 22px;
-    margin: 8vw 0 0 3vw;
-    grid-area: card01;
-}
-
-.card-2{
-    display: grid;
-    justify-content: center;
-    grid-template-rows: 1fr 1fr 1fr;
-    width: 300px;
-    height: 420px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 22px;
-    margin: 8vw 0 0 2vw;
-    grid-area: card02;
-}
-
-.card-3{
-    display: grid;
-    justify-content: center;
-    grid-template-rows: 1fr 1fr 1fr;
-    width: 300px;
-    height: 420px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 22px;
-    margin: 8vw 0 0 3vw;
-    grid-area: card03;
-}
-
-.card-4{
-    display: grid;
-    justify-content: center;
-    grid-template-rows: 1fr 1fr 1fr;
-    width: 300px;
-    height: 420px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 22px;
-    margin: 8vw 0 0 2vw;
-    grid-area: card04;
-}
-
-.card-image{
-    margin-top: 1vw;
-}
-
-.card-info{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.card-title{
-    display: grid;
-    margin: 0.5vw 0 0 0.5vw;
-}
-
-.card-price{
-    display: grid;
-    justify-content: end;
-    margin: 0.5vw 0 0 0.5vw;
-}
-
-.card-button{
-    display: grid;
-    margin: 0.5vw 0 0 4.5vw;
-    width: 6vw;
-    height: 1.5vw;
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.76);
-    color: #FFFFFF;
-    border-width: 0;
-}
-
-.mercado__cripto{
-    padding: 1vw 0 0 11.5vw;
-    width: 424px;
-    height: 98px;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 73px;
-}
-
-.rectangulo__mercado__cripto{
-    margin: 0 0 0 8vw;
-    width: 667.08px;
-    height: 434.05px;
-    background: rgba(0, 0, 0, 0.76);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 22px;    
-}
-
-.contenido__principal__tablacripto{
-    width: 30vw;
-    height: 30vw;
-    margin: -7vw 0 0 3.5vw;
-}
-
-.amigos{
-    padding: 1vw 0 0 15vw;
-    width: 424px;
-    height: 98px;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 73px;
-}
-
-.rectangulo__amigos{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    margin: 0 0 0 8vw;
-    width: 667.08px;
-    height: 434.05px;
-    background: rgba(0, 0, 0, 0.76);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 22px;   
-}
-
-.card__amigo{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    width: 573px;
-    height: 71px;
-    background: linear-gradient(180deg, rgba(106, 185, 236, 0.7) 27.43%, rgba(255, 255, 255, 0) 171.71%);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    transform: matrix(1, 0, -0.08, 1, 0, 0);
-    margin: -1vw 0 0 2.8vw;
-}
-
-.card__amigo__image{
-    margin: 0.2vw 0 0 2.5vw;
-}
-
-.card__amigo__info{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
-
-/* Termina Contenido Principal */
-/* Empieza Menu Ganancias */
-.menu__ganancias{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 60vw;
-}
-
-.rectangulo__ganancias__cripto{
-    margin: 0 0 0 10vw;
-    width: 664.81px;
-    height: 756.4px;
-    background: rgba(0, 0, 0, 0.76);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 22px;
-}
-
-.ganancias__cripto{
-    width: 424px;
-    height: 98px;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 73px;
-    padding: 1vw 0 0 10vw;
-}
-
-.rectangulo__ganancias__nfts{
-    margin: 0 0 0 7vw;
-    width: 664.81px;
-    height: 756.4px;
-    background: rgba(0, 0, 0, 0.76);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 22px;
-}
-
-.ganancias__nfts{
-    padding: 1vw 0 0 11vw;
-    width: 424px;
-    height: 98px;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 73px;
-}
-/* Termina Menu Ganancias */
-
+    .menu__ganancias{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 250vw;
+    }
+    
+    .rectangulo__ganancias__cripto{
+        display: grid;
+        grid-template-areas:
+        "title"
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5";
+        margin: 2vw 0 0 7vw;
+        width: 300px;
+        height: 500px;
+        background: rgba(0, 0, 0, 0.76);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 22px;
+        z-index: 1;
+        overflow: scroll;
+    }
+    
+    .card__cripto-1{
+        display: grid;
+        grid-template-areas:
+        "logo logo"
+        "currency margin"
+        "quantity quantity"
+        "graph graph";
+        width: 225px;
+        height: 145px;
+        background: linear-gradient(180.23deg, rgba(117, 191, 240, 0.76) 36.57%, rgba(255, 0, 0, 0.516) 117.01%);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        grid-area: card1;
+        margin: 0 0 0 10vw;
+    }
+    
+    .card__cripto-2{
+        display: grid;
+        grid-template-areas:
+        "logo logo"
+        "currency margin"
+        "quantity quantity"
+        "graph graph";
+        width: 225px;
+        height: 145px;
+        background: linear-gradient(180deg, rgba(117, 191, 240, 0.6) 53.65%, rgba(42, 185, 39, 0.76) 99.99%, rgba(117, 191, 240, 0) 100%);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        grid-area: card2;
+        margin: 8vw 0 0 10vw;
+    }
+    
+    .card__cripto-3{
+        display: grid;
+        grid-template-areas:
+        "logo logo"
+        "currency margin"
+        "quantity quantity"
+        "graph graph";
+        width: 225px;
+        height: 145px;
+        background: linear-gradient(180.23deg, rgba(117, 191, 240, 0.76) 36.57%, rgba(255, 0, 0, 0.516) 117.01%);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        grid-area: card3;
+        margin: 8vw 0 0 10vw;
+    }
+    
+    .card__cripto-4{
+        display: grid;
+        grid-template-areas:
+        "logo logo"
+        "currency margin"
+        "quantity quantity"
+        "graph graph";
+        width: 225px;
+        height: 145px;
+        background: linear-gradient(180deg, rgba(117, 191, 240, 0.6) 53.65%, rgba(42, 185, 39, 0.76) 99.99%, rgba(117, 191, 240, 0) 100%);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        grid-area: card4;
+        margin: 8vw 0 0 10vw;
+    }
+    
+    .card__cripto-5{
+        display: grid;
+        grid-template-areas:
+        "logo logo"
+        "currency margin"
+        "quantity quantity"
+        "graph graph";
+        width: 225px;
+        height: 145px;
+        background: linear-gradient(180deg, rgba(117, 191, 240, 0.6) 53.65%, rgba(42, 185, 39, 0.76) 99.99%, rgba(117, 191, 240, 0) 100%);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        grid-area: card5;
+        margin: 8vw 0 0 10vw;
+    }
+    
+    .currency{
+        display: grid;
+        grid-area: currency;
+        margin: 0 0 0 2vw;
+    }
+    
+    .margin{
+        display: grid;
+        grid-area: margin;
+    }
+    
+    .quantity{
+        display: grid;
+        grid-area: quantity;
+        margin: 0 0 0 1vw;
+    }
+    
+    .graph{
+        display: grid;
+        grid-area: graph;
+        margin: -8vw 0 0 6vw;
+    }
+    
+    
+    .logo__token{
+        margin: -6vw 0 0 22vw;
+    }
+    
+    .ganancias__cripto{
+        width: 500px;
+        height: 98px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 73px;
+        margin: -3vw 0 0 23vw;
+        grid-area: title;
+    }
+    
+    .rectangulo__ganancias__nfts{
+        display: grid;
+        grid-template-areas: 
+        "title"
+        "card-nft1"
+        "card-nft2"
+        "card-nft3"
+        ;
+        margin: 5vw 0 0 7vw;
+        width: 300px;
+        height: 450px;
+        background: rgba(0, 0, 0, 0.76);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 22px;
+        overflow: scroll;
+        z-index: 1;
+    }
+    
+    .rectangulo__ganancias__nfts::-webkit-scrollbar{
+        width: 0;
+    }
+    
+    .ganancias__nfts{
+        display: grid;
+        margin: -3vw 0 0 25vw;
+        width: 500px;
+        height: 70px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 73px;
+        grid-area: title;
+    }
+    
+    .card__nfts-1{
+        display: grid;
+        grid-area: card-nft1;
+        grid-template-areas: 
+        "image-nft image-nft"
+        "name-nft price-nft"
+        ;
+        justify-content: center;
+        width: 280px;
+        height: 200px;
+        background: linear-gradient(180deg, rgba(90, 150, 187, 0.6) 56.88%, rgba(122, 233, 133, 0.342) 92.71%);
+        border: 1px solid #E5E5E5;
+        box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        margin: 0 0 0 2.5vw;
+    }
+    
+    .card__nfts-2{
+        display: grid;
+        grid-area: card-nft2;
+        grid-template-areas: 
+        "image-nft image-nft"
+        "name-nft price-nft"
+        ;
+        justify-content: center;
+        width: 280px;
+        height: 200px;
+        background: linear-gradient(180deg, rgba(90, 150, 187, 0.6) 56.88%, rgba(122, 233, 133, 0.342) 92.71%);
+        border: 1px solid #E5E5E5;
+        box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        margin: 2.5vw 0 0 2.5vw;
+    }
+    
+    .card__nfts-3{
+        display: grid;
+        grid-area: card-nft3;
+        grid-template-areas: 
+        "image-nft image-nft"
+        "name-nft price-nft"
+        ;
+        justify-content: center;
+        width: 280px;
+        height: 200px;
+        background: linear-gradient(180deg, rgba(90, 150, 187, 0.6) 56.88%, rgba(122, 233, 133, 0.342) 92.71%);
+        border: 1px solid #E5E5E5;
+        box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        margin: 2.5vw 0 0 2.5vw;
+    }
+    
+    .image__nft{
+        display: grid;
+        grid-area: image-nft;
+        margin: -10vw 0 0 0;
+        width: 250px;
+        height: 250px;
+    }
+    
+    .name__nft-ganancias{
+        display: grid;
+        grid-area: name-nft;
+        font-size: medium;
+        margin: -12vw 0 0 0;
+    }
+    
+    .price__nft-ganancias{
+        display: grid;
+        grid-area: price-nft;
+        margin: -12vw 0 0 6vw;
+        font-size: medium;
+    }
+/* termina menu ganancias */
 /* Empieza Pie de Pagina */
 
 .main__footer{
     display: grid;
     grid-template-columns: 1fr;
-    width: 100vw;
     height: 30vw;
 }
 
 .pie__de__pagina{
     position: absolute;
-    width: 1855px;
-    height: 370px;
-    left: 0px;
-    top: 3100px;
+    width: 375px;
+    height: 200px;
+    margin: 0 0 0 0;
     background: conic-gradient(from 180deg at 50% 50%, #000000 -1.95deg, #C37B1D 11.07deg, #000000 40deg, #DB8A21 97.79deg, #000000 166.91deg, #C37B1D 205.98deg, #000000 269.61deg, #0174CD 337.3deg, #000000 358.05deg, #C37B1D 371.07deg);
     border-radius: 35px 35px 0px 0px;
 }
 
 .pie__de__pagina__logo{
     position: absolute;
-    width: 265.33px;
-    height: 256px;
-    margin: 4vw 0 0 4vw;
+    width: 100px;
+    height: 100px;
+    margin: 16vw 0 0 53vw;
+    z-index: 1;
 }
 
 .pie__de__pagina__rectangulo__menu{
     position: absolute;
-    width: 550px;
-    height: 256px;
-    left: 500px;
-    top: 3175px;
+    width: 300px;
+    height: 300px;
+    margin: -10vw 0 0 6vw;
 }
 
 .menu__navegacion__pie__de__pagina{
     position: absolute;
     width: 300px;
     height: 211px;
-    left: 600px;
-    top: 3200px;
+    margin: 15vw 0 0 10vw;
     color: #FFFFFF;
-    font-size: 30px;
+    font-size: 15px;
     text-decoration: none;
     list-style-type: none;
 }
 /* Termina Pie de Pagina */
-
 /* Empieza Mercado Cripto */
-
+    
 .mercado__cripto__rectangulo{
-    position: absolute;
-    width: 1400px;
-    height: 850px;
-    left: 250px;
-    top: 150px;
+    width: 355px;
+    height: 400px;
+    margin: 20vw 0 0 1.5vw;
     background: rgba(0, 0, 0, 0.75);
     border-radius: 22px;
     text-align: center;
     color: #FFFFFF;
-    font-size: 30px;
-    padding-top: 5%;
+    overflow: scroll;
+}
+
+.title__mercadocripto{
+    font-size: 15px;
+    margin: 2vw 0 0 55vw;
 }
 
 .tabla__de__criptos{
-    position: absolute;
-    width: 1323px;
-    height: 628.18px;
-    left: 340px;
-    top: 280px;
+    width: 550px;
+    height: 350px;
+    margin: 0 0 0 5vw;
     color: #FFFFFF;
 }
 /* Termina Mercado Cripto */
-
 /* Empieza Pie de Pagina Mercado Cripto y NFTs*/
 .pie__de__pagina-2{
     position: absolute;
-    width: 1855px;
-    height: 370px;
-    left: 0px;
-    top: 1050px;
-
+    width: 375px;
+    height: 200px;
+    margin: 10vw 0 0 0;
     background: conic-gradient(from 180deg at 50% 50%, #000000 -1.95deg, #C37B1D 11.07deg, #000000 40deg, #DB8A21 97.79deg, #000000 166.91deg, #C37B1D 205.98deg, #000000 269.61deg, #0174CD 337.3deg, #000000 358.05deg, #C37B1D 371.07deg);
     border-radius: 35px 35px 0px 0px;
 }
 
 .pie__de__pagina__logo-2{
     position: absolute;
-    width: 265.33px;
-    height: 256px;
-    left: 107px;
-    top: 1110px;
+    width: 120px;
+    height: 120px;
+    margin: 12vw 0 0 52vw;
+    z-index: 1;
 }
 
 .pie__de__pagina__rectangulo__menu-2{
     position: absolute;
-    width: 550px;
-    height: 256px;
-    left: 500px;
-    top: 1110px;
+    width: 300px;
+    height: 300px;
+    margin: -12vw 0 0 8vw;
 }
 
-.menu__navegacion__pie__de__pagina-2{
+.menu__navegacion__pie__de__pagina-2 li a{
     position: absolute;
     width: 300px;
     height: 211px;
-    left: 600px;
-    top: 1130px;
+    margin: 12vw 0 0 8vw;
     color: #FFFFFF;
-    font-size: 30px;
+    font-size: 15px;
     text-decoration: none;
     list-style-type: none;
 }
 /* Termina Pie de Pagina Mercado Cripto y NFTs */
-
-/* Empieza Mercado NFTs */
-
-.rectangulo__mercado__nfts{
-    position: absolute;
-    width: 1400px;
-    height: 850px;
-    left: 250px;
-    top: 150px;
-    background: rgba(0, 0, 0, 0.75);
-    border-radius: 22px;
-    text-align: center;
-    color: #FFFFFF;
-    font-size: 30px;
-    padding-top: 5%;
-}
-
-/* Termina Mercado NFTs */
-
-/* Empieza Ganancias Cripto */
-
-.ganancias__cripto-rectangulo{
-    position: absolute;
-    width: 1067.56px;
-    height: 759.42px;
-    left: 420.44px;
-    top: 145px;
-    background: rgba(0, 0, 0, 0.76);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 22px;
-    text-align: center;
-    color: #FFFFFF;
-    font-size: 30px;
-    padding-top: 5%;
-}
-
-.cripto__venta{
-    position: absolute;
-    width: 1880px;
-    height: 481px;
-    left: -25px;
-    top: 997px;
-    background: rgba(0, 0, 0, 0.93);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 25px;
-    text-align: center;
-}
-
-.cripto-1{
-    position: absolute;
-    left: 200px;
-    top: 200px;
-    font-size: 25px;
-}
-
-.cripto-2{
-    position: absolute;
-    left: 1400px;
-    top: 200px;
-    font-size: 25px;
-}
-
-.boton__vender{
-    position: absolute;
-    width: 130px;
-    height: 45px;
-    left: 853px;
-    top: 300px;
-}
-/* Termina Ganancias Cripto */
-/* Empieza Ganancias NFTs */
-.ganancias__nfts-rectangulo{
-    position: absolute;
-    width: 1031.4px;
-    height: 759.42px;
-    left: 430px;
-    top: 1570px;
-    background: rgba(0, 0, 0, 0.76);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 22px;
-    text-align: center;
-    color: #FFFFFF;
-    font-size: 30px;
-    padding-top: 5%;
-}
-
-.nfts__venta{
-    position: absolute;
-    width: 1880px;
-    height: 481px;
-    left: -25px;
-    top: 2393px;
-    background: rgba(0, 0, 0, 0.76);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 25px;
-    text-align: center;
-    line-height: 100px;
-    font-size: 25px;
-}
-
-.ofertas__nft{
-    position: absolute;
-    left: 300px;
-    top: 200px;
-}
-/* Termina Ganancias NFTs */
-
-/* Empieza Menu Amigos */
-
-.menu__amigos-rectangulo{
-    position: absolute;
-    width: 1450px;
-    height: 830px;
-    left: 250px;
-    top: 169px;
-    background: rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 22px;
-}
-
-.contactos{
-    position: absolute;
-    width: 85px;
-    height: 29px;
-    left: 200px;
-    top: 50px;
-    font-size: 25px;
-}
-
-.mensajes{
-    position: absolute;
-    width: 85px;
-    height: 29px;
-    left: 650px;
-    top: 50px;
-    font-size: 25px;
-}
-
-.solicitudes{
-    position: absolute;
-    width: 85px;
-    height: 29px;
-    left: 1100px;
-    top: 50px;
-    font-size: 25px;
-}
-/* Termina Menu Amigos */
-
-@keyframes float {
-    0%, 100% {
-        transform: translate(-10px, -10px);
+@media (min-width: 992px){
+    #menu__inicio{
+        background-color: #2750aa;
+        font-family: 'Quicksand', sans-serif;
+        color: #FFFFFF;
     }
-    50% {
-        transform: translate(5px, 10px);
+    /* Empieza Menu de Navegacion */
+    .main__header{
+        height: 10vw;
+        display: grid;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .menu__nav{
+        display: grid;
+        grid-template-columns: repeat(5, 15rem);
+        margin: 1vw 0 0 0;
+        gap: 0;
+    }
+    
+    .menu__nav li{
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 22px;
+        text-align: center;
+        list-style-type: none;
+        z-index: 1;
+    }
+    
+    .menu__nav li a{
+        color: #FFFFFF;
+        background: rgba(255, 109, 3, 0.6);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        text-decoration: none;
+        border-radius: 22px;
+    }
+    
+    .menu__nav a:hover{
+        background-color: #c9150f;
+        border-radius: 22px;
+        transition: all 1.5s;
+    }
+    
+    
+    .menu__nav__inicio {
+        padding: 10px 55px;
+    }
+    
+    .menu__nav__mercadocripto {
+        padding: 10px 15px;
+    }
+    
+    .menu__nav__mercadonfts {
+        padding: 10px 15px;
+    }
+    
+    
+    .menu__nav__misganancias {
+        padding: 10px 15px;
+    }
+    
+    
+    
+    .menu__nav__amigos {
+        padding: 10px 55px;
+    }
+    
+    
+    
+    /* Termina Menu de Navegacion */
+    
+    /* Empieza Menu Home */
+    
+    .main__home{
+        display: grid;
+        width: 99.1vw;
+        height: 45vw;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .main__home__fraseynombre-tabladecriptos{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .home__rectangulo__robotcripto{
+        display: grid;
+        justify-content: center;
+        width: 427.23px;
+        height: 528.56px;
+        background: rgba(0, 0, 0, 0.95);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 22px;
+        transform: matrix(1, 0, -0.08, 1, 0, 0);
+    }
+    
+    .robotcripto{
+        margin: -2vw 0 0 2vw;
+        animation-name: float;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 10s;
+        width: 40rem;
+        height: 40rem;
+    }
+    
+    .fondo__cripto-1{
+        position: absolute;
+        width: 45rem;
+        height: 45rem;
+        margin:0 0 5vw 0;
+    }
+    
+    .fondo__cripto-2{
+        position: absolute;
+        width: 65rem;
+        height: 65rem;
+        margin: -10vw 0 0 0;
+    }
+    
+    .home__frase{
+        position: absolute;
+        width: 619px;
+        height: 228px;
+        font-size: 45px;
+        line-height: 73px;
+        margin: 5vw 0 0 20vw;
+    
+    }
+    
+    .home__nombre{
+        position: absolute;
+        width: 350px;
+        height: 45px;
+        color: #FFFFFF;
+        padding-top: 0;
+        font-size: 30px;
+        text-align: center;
+        border-radius: 22px;
+        margin: 18rem 0 0 25vw;
+        background: rgba(255, 109, 3, 0.6);
+        z-index: 1;
+    }
+    
+    .home__nombre:hover{
+        transform: translate(0,-20px) scale(1);
+        background-color: #c9150f;
+        border-radius: 22px;
+        transition: all 1s;
+    }
+    
+    .home__rectangulo__tabladecriptos{
+        display: grid;
+        margin: 2vw 0 0 35vw;
+        width: 450px;
+        height: 237.75px;
+        background: rgba(0, 0, 0, 0.83);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 22px;
+        transform: matrix(1, 0, -0.08, 1, 0, 0);    
+        z-index: 2;
+    }
+    
+    .tokens{
+        margin: 0.8vw 0 0 3vw;
+        width: 350px;
+    }
+    
+    /* Termina Menu Home */
+    
+    /* Empieza contenido principal */
+    .contenido__principal{
+        position: absolute;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        background-image: url(https://cdn.shopify.com/s/files/1/2642/6578/t/28/assets/Header-Mori.jpg?v=138821603627941983301650295023);
+        height: 55vw;
+        background-size: cover;
+        background-position: center;
+        margin: 0 0 0 0;
+    }
+    
+    .contenido__principal__mercadocripto-amigos{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 1fr;
+    }
+    
+    .mercado__nfts{
+        width: 424px;
+        height: 98px;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 73px;
+    }
+    
+    
+    .contenido__principal__rectangulo__mercadonfts{
+        display: grid;
+        grid-template-areas:
+        "title title"
+        "card01 card02"
+        "card03 card04";
+        width: 762.38px;
+        height: 905px;
+        background: rgba(0, 0, 0, 0.76);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 22px;
+        overflow: scroll;
+        margin: 3vw 0 0 5vw;
+        padding: 0 0 0 0;
+    }
+    .contenido__principal__rectangulo__mercadonfts::-webkit-scrollbar{
+        width: 0;
+    }
+    
+    .mercado__nfts{
+        width: 424px;
+        height: 98px;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 73px;
+        margin: 1vw 0 0 15vw;
+        grid-area: title;
+    }
+    
+    .card-1{
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 300px;
+        height: 420px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 22px;
+        margin: -1vw 0 0 3vw;
+        grid-area: card01;
+    }
+    
+    .card-2{
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 300px;
+        height: 420px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 22px;
+        margin: -1vw 0 0 2vw;
+        grid-area: card02;
+    }
+    
+    .card-3{
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 300px;
+        height: 420px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 22px;
+        margin: 3vw 0 0 3vw;
+        grid-area: card03;
+    }
+    
+    .card-4{
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 300px;
+        height: 420px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 22px;
+        margin: 3vw 0 0 2vw;
+        grid-area: card04;
+    }
+    
+    .card-image{
+        margin: 1vw 0 0 0;
+        width: 300px;
+        height: 300px;
+    }
+    
+    .card-info{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .card-title{
+        display: grid;
+        margin: 0.5vw 0 0 0.5vw;
+        font-size: 30px;
+    }
+    
+    .card-price{
+        display: grid;
+        justify-content: end;
+        margin: 0.5vw 1vw 0 0;
+        font-size: 30px;
+    }
+    
+    .card-button{
+        display: grid;
+        margin: 0.5vw 0 0 4.5vw;
+        width: 6vw;
+        height: 1.5vw;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.76);
+        color: #FFFFFF;
+        border-width: 0;
+        font-size: 20px;
+    }
+    
+    .mercado__cripto{
+        padding: 1vw 0 0 11.5vw;
+        width: 500px;
+        height: 98px;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 73px;
+        margin: -1vw 0 0 -0.5vw;
+    }
+    
+    .rectangulo__mercado__cripto{
+        width: 667.08px;
+        height: 434.05px;
+        background: rgba(0, 0, 0, 0.76);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 22px;   
+        margin: 3vw 0 0 8vw;
+    }
+    
+    .contenido__principal__tablacripto{
+        width: 35vw;
+        height: 35vw;
+        margin: -3vw 0 0 1.5vw;
+    }
+    
+    .amigos{
+        margin: 0 0 0 14vw;
+        width: 424px;
+        height: 98px;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 73px;
+    }
+    
+    .rectangulo__amigos{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        width: 667.08px;
+        height: 434.05px;
+        background: rgba(0, 0, 0, 0.76);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 22px;  
+        margin: 0.5vw 0 0 8vw;
+    }
+    
+    .card__amigo{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        width: 573px;
+        height: 71px;
+        background: linear-gradient(180deg, rgba(106, 185, 236, 0.7) 27.43%, rgba(255, 255, 255, 0) 171.71%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        transform: matrix(1, 0, -0.08, 1, 0, 0);
+        margin: -1vw 0 0 2.8vw;
+    }
+    
+    .card__amigo__image{
+        margin: -0.1vw 0 0 2.5vw;
+        width: 75px;
+        height: 75px;
+    }
+    
+    .card__amigo__info{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    /* Termina Contenido Principal */
+    /* Empieza Menu Ganancias */
+    .menu__ganancias{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 60vw;
+    }
+    
+    .rectangulo__ganancias__cripto{
+        display: grid;
+        grid-template-areas:
+        "title title"
+        "card1 card2"
+        "card3 card4"
+        "card5 card5";
+        grid-template-rows: 1fr 1fr;
+        margin: 0 0 0 10vw;
+        width: 664.81px;
+        height: 756.4px;
+        background: rgba(0, 0, 0, 0.76);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 22px;
+        z-index: 1;
+        overflow: none;
+    }
+    
+    .rectangulo__ganancias__cripto::-webkit-scrollbar{
+        width: 0;
+    }
+
+    .card__cripto-1{
+        display: grid;
+        grid-template-areas:
+        "logo logo"
+        "currency margin"
+        "quantity quantity"
+        "graph graph";
+        width: 225px;
+        height: 145px;
+        background: linear-gradient(180.23deg, rgba(117, 191, 240, 0.76) 36.57%, rgba(255, 0, 0, 0.516) 117.01%);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        grid-area: card1;
+        margin: -12vw 0 0 4vw;
+    }
+    
+    .card__cripto-2{
+        display: grid;
+        grid-template-areas:
+        "logo logo"
+        "currency margin"
+        "quantity quantity"
+        "graph graph";
+        width: 225px;
+        height: 145px;
+        background: linear-gradient(180deg, rgba(117, 191, 240, 0.6) 53.65%, rgba(42, 185, 39, 0.76) 99.99%, rgba(117, 191, 240, 0) 100%);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        grid-area: card2;
+        margin: -12vw 0 0 0;
+    }
+    
+    .card__cripto-3{
+        display: grid;
+        grid-template-areas:
+        "logo logo"
+        "currency margin"
+        "quantity quantity"
+        "graph graph";
+        width: 225px;
+        height: 145px;
+        background: linear-gradient(180.23deg, rgba(117, 191, 240, 0.76) 36.57%, rgba(255, 0, 0, 0.516) 117.01%);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        grid-area: card3;
+        margin: -20vw 0 0 4vw;
+    }
+    
+    .card__cripto-4{
+        display: grid;
+        grid-template-areas:
+        "logo logo"
+        "currency margin"
+        "quantity quantity"
+        "graph graph";
+        width: 225px;
+        height: 145px;
+        background: linear-gradient(180deg, rgba(117, 191, 240, 0.6) 53.65%, rgba(42, 185, 39, 0.76) 99.99%, rgba(117, 191, 240, 0) 100%);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        grid-area: card4;
+        margin: -20vw 0 0 0;
+    }
+    
+    .card__cripto-5{
+        display: grid;
+        grid-template-areas:
+        "logo logo"
+        "currency margin"
+        "quantity quantity"
+        "graph graph";
+        width: 225px;
+        height: 145px;
+        background: linear-gradient(180deg, rgba(117, 191, 240, 0.6) 53.65%, rgba(42, 185, 39, 0.76) 99.99%, rgba(117, 191, 240, 0) 100%);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 20px;
+        grid-area: card5;
+        margin: -10vw 0 0 11.5vw;
+    }
+    
+    .currency{
+        display: grid;
+        grid-area: currency;
+        margin: 0 0 0 1vw;
+    }
+    
+    .margin{
+        display: grid;
+        grid-area: margin;
+    }
+    
+    .quantity{
+        display: grid;
+        grid-area: quantity;
+        margin: 0 0 0 1vw;
+    }
+    
+    .graph{
+        display: grid;
+        grid-area: graph;
+        margin: -1vw 0 0 1vw;
+    }
+    
+    
+    .logo__token{
+        margin: -1.3vw 0 0 4.8vw;
+    }
+    
+    .ganancias__cripto{
+        width: 500px;
+        height: 98px;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 73px;
+        margin: 1vw 0 0 11vw;
+        grid-area: title;
+    }
+    
+    .rectangulo__ganancias__nfts{
+        display: grid;
+        grid-template-areas: 
+        "title"
+        "card-nft1"
+        "card-nft2"
+        "card-nft3"
+        ;
+        margin: 0 0 0 7vw;
+        width: 664.81px;
+        height: 756.4px;
+        background: rgba(0, 0, 0, 0.76);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 22px;
+        overflow: scroll;
+        z-index: 1;
+    }
+    
+    .rectangulo__ganancias__nfts::-webkit-scrollbar{
+        width: 0;
+    }
+    
+    .ganancias__nfts{
+        display: grid;
+        margin: 0 0 0 11vw;
+        width: 500px;
+        height: 98px;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 73px;
+        grid-area: title;
+    }
+    
+    .card__nfts-1{
+        display: grid;
+        grid-area: card-nft1;
+        grid-template-areas: 
+        "image-nft image-nft"
+        "name-nft price-nft"
+        ;
+        justify-content: center;
+        width: 318px;
+        height: 208px;
+        background: linear-gradient(180deg, rgba(90, 150, 187, 0.6) 56.88%, rgba(122, 233, 133, 0.342) 92.71%);
+        border: 1px solid #E5E5E5;
+        box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        margin: -1vw 0 0 9vw;
+    }
+    
+    .card__nfts-2{
+        display: grid;
+        grid-area: card-nft2;
+        grid-template-areas: 
+        "image-nft image-nft"
+        "name-nft price-nft"
+        ;
+        justify-content: center;
+        width: 318px;
+        height: 208px;
+        background: linear-gradient(180deg, rgba(90, 150, 187, 0.6) 56.88%, rgba(122, 233, 133, 0.342) 92.71%);
+        border: 1px solid #E5E5E5;
+        box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        margin: 2.5vw 0 0 9vw;
+    }
+    
+    .card__nfts-3{
+        display: grid;
+        grid-area: card-nft3;
+        grid-template-areas: 
+        "image-nft image-nft"
+        "name-nft price-nft"
+        ;
+        justify-content: center;
+        width: 318px;
+        height: 208px;
+        background: linear-gradient(180deg, rgba(90, 150, 187, 0.6) 56.88%, rgba(122, 233, 133, 0.342) 92.71%);
+        border: 1px solid #E5E5E5;
+        box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        margin: 2.5vw 0 0 9vw;
+    }
+    
+    .image__nft{
+        display: grid;
+        grid-area: image-nft;
+        margin: -3vw 0 0 0;
+        width: 280px;
+        height: 280px;
+    }
+    
+    .name__nft-ganancias{
+        display: grid;
+        grid-area: name-nft;
+        font-size: medium;
+        margin: -3vw 0 0 0;
+    }
+    
+    .price__nft-ganancias{
+        display: grid;
+        grid-area: price-nft;
+        margin: -3vw 0 0 3vw;
+        font-size: medium;
+    }
+    
+    /* Termina Menu Ganancias */
+    
+    /* Empieza Pie de Pagina */
+    
+    .main__footer{
+        margin: -35vw 0 0 0; 
+    }
+    
+    .pie__de__pagina{
+        position: absolute;
+        width: 1853px;
+        height: 370px;
+        margin: 0 0 0 0;
+        background: conic-gradient(from 180deg at 50% 50%, #000000 -1.95deg, #C37B1D 11.07deg, #000000 40deg, #DB8A21 97.79deg, #000000 166.91deg, #C37B1D 205.98deg, #000000 269.61deg, #0174CD 337.3deg, #000000 358.05deg, #C37B1D 371.07deg);
+        border-radius: 35px 35px 0px 0px;
+    }
+    
+    .pie__de__pagina__logo{
+        position: absolute;
+        width: 265.33px;
+        height: 256px;
+        margin: 3vw 0 0 4vw;
+    }
+    
+    .pie__de__pagina__rectangulo__menu{
+        position: absolute;
+        width: 550px;
+        height: 256px;
+        margin: 3vw 0 0 25vw;
+    }
+    
+    .menu__navegacion__pie__de__pagina{
+        position: absolute;
+        width: 300px;
+        height: 211px;
+        margin: 4vw 0 0 30vw;
+        color: #FFFFFF;
+        font-size: 30px;
+        text-decoration: none;
+        list-style-type: none;
+    }
+    /* Termina Pie de Pagina */
+    
+    /* Empieza Mercado Cripto */
+    
+    .mercado__cripto__rectangulo{
+        position: absolute;
+        width: 1400px;
+        height: 850px;
+        margin: 0 0 0 12vw;
+        background: rgba(0, 0, 0, 0.75);
+        border-radius: 22px;
+        text-align: center;
+        color: #FFFFFF;
+        overflow: unset;
+    }
+
+    .title__mercadocripto{
+        font-size: 30px;
+        margin: 2vw 0 0 2vw;
+    }
+    
+    .tabla__de__criptos{
+        position: absolute;
+        width: 1323px;
+        height: 680px;
+        color: #FFFFFF;
+        margin: 3vw 0 0 2vw;
+    }
+    /* Termina Mercado Cripto */
+    
+    /* Empieza Pie de Pagina Mercado Cripto y NFTs*/
+    .pie__de__pagina-2{
+        position: absolute;
+        width: 1853px;
+        height: 370px;
+        margin: 50vw 0 0 0;
+        background: conic-gradient(from 180deg at 50% 50%, #000000 -1.95deg, #C37B1D 11.07deg, #000000 40deg, #DB8A21 97.79deg, #000000 166.91deg, #C37B1D 205.98deg, #000000 269.61deg, #0174CD 337.3deg, #000000 358.05deg, #C37B1D 371.07deg);
+        border-radius: 35px 35px 0px 0px;
+    }
+    
+    .pie__de__pagina__logo-2{
+        position: absolute;
+        width: 265.33px;
+        height: 256px;
+        margin: 4vw 0 0 10vw;
+    }
+    
+    .pie__de__pagina__rectangulo__menu-2{
+        position: absolute;
+        width: 550px;
+        height: 256px;
+        margin: 4vw 0 0 30vw;
+    }
+    
+    .menu__navegacion__pie__de__pagina-2 li a{
+        position: absolute;
+        color: #FFFFFF;
+        line-height: 100px;
+        margin: 5vw 0 0 30vw;
+        font-size: 30px;
+        text-decoration: none;
+        list-style-type: none;
+    }
+    /* Termina Pie de Pagina Mercado Cripto y NFTs */
+    
+    /* Empieza Mercado NFTs */
+    
+    .rectangulo__mercado__nfts{
+        position: absolute;
+        width: 1400px;
+        height: 850px;
+        left: 250px;
+        top: 150px;
+        background: rgba(0, 0, 0, 0.75);
+        border-radius: 22px;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 30px;
+        padding-top: 5%;
+    }
+    
+    /* Termina Mercado NFTs */
+    
+    /* Empieza Ganancias Cripto */
+    
+    .ganancias__cripto-rectangulo{
+        position: absolute;
+        width: 1067.56px;
+        height: 759.42px;
+        left: 420.44px;
+        top: 145px;
+        background: rgba(0, 0, 0, 0.76);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 22px;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 30px;
+        padding-top: 5%;
+    }
+    
+    .cripto__venta{
+        position: absolute;
+        width: 1880px;
+        height: 481px;
+        left: -25px;
+        top: 997px;
+        background: rgba(0, 0, 0, 0.93);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 25px;
+        text-align: center;
+    }
+    
+    .cripto-1{
+        position: absolute;
+        left: 200px;
+        top: 200px;
+        font-size: 25px;
+    }
+    
+    .cripto-2{
+        position: absolute;
+        left: 1400px;
+        top: 200px;
+        font-size: 25px;
+    }
+    
+    .boton__vender{
+        position: absolute;
+        width: 130px;
+        height: 45px;
+        left: 853px;
+        top: 300px;
+    }
+    /* Termina Ganancias Cripto */
+    /* Empieza Ganancias NFTs */
+    .ganancias__nfts-rectangulo{
+        position: absolute;
+        width: 1031.4px;
+        height: 759.42px;
+        left: 430px;
+        top: 1570px;
+        background: rgba(0, 0, 0, 0.76);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 22px;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 30px;
+        padding-top: 5%;
+    }
+    
+    .nfts__venta{
+        position: absolute;
+        width: 1880px;
+        height: 481px;
+        left: -25px;
+        top: 2393px;
+        background: rgba(0, 0, 0, 0.76);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 25px;
+        text-align: center;
+        line-height: 100px;
+        font-size: 25px;
+    }
+    
+    .ofertas__nft{
+        position: absolute;
+        left: 300px;
+        top: 200px;
+    }
+    /* Termina Ganancias NFTs */
+    
+    /* Empieza Menu Amigos */
+    
+    .menu__amigos-rectangulo{
+        position: absolute;
+        width: 1450px;
+        height: 830px;
+        left: 250px;
+        top: 169px;
+        background: rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 22px;
+    }
+    
+    .contactos{
+        position: absolute;
+        width: 85px;
+        height: 29px;
+        left: 200px;
+        top: 50px;
+        font-size: 25px;
+    }
+    
+    .mensajes{
+        position: absolute;
+        width: 85px;
+        height: 29px;
+        left: 650px;
+        top: 50px;
+        font-size: 25px;
+    }
+    
+    .solicitudes{
+        position: absolute;
+        width: 85px;
+        height: 29px;
+        left: 1100px;
+        top: 50px;
+        font-size: 25px;
+    }
+    /* Termina Menu Amigos */
+    
+    @keyframes float {
+        0%, 100% {
+            transform: translate(-10px, -10px);
+        }
+        50% {
+            transform: translate(5px, 10px);
+        }
     }
 }
+
