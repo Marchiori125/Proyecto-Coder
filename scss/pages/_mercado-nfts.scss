@@ -1,0 +1,161 @@
+
+@media (min-width: 992px){  
+/* Empieza Mercado NFTs */  
+.mercado__nfts__rectangulo{
+    position: absolute;
+    width: 1400px;
+    height: 1000px;
+    margin: 0 0 0 13vw;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 30px;
+    padding-top: 5%;
+    &__title{
+        margin: -4vw 0 0 0;
+    }
+    &__btn{
+        margin-top: 2vw;
+        background-color: #0174CD;
+        border-style: hidden;
+        border-radius: 20px;
+        color: #FFFFFF;
+        transition: all 0.20s linear;
+        -webkit-transition: all 0.20s linear;
+        -moz-transition: all 0.20s linear;
+        position: relative;
+        bottom: 0;
+        box-shadow: 0px 5px 0 #005ba0;
+        &:active{
+            bottom: -5px;
+            box-shadow:0 0 0 #0174CD, inset 0 0 5px rgba(0, 0, 0, 0.4);
+        }
+    }
+    &__cards{
+        display: grid;
+        grid-template-areas:
+        "card01 card02 card03 card04"
+        "card05 card06 card07 card08"
+        ;
+        margin: 2vw 0 0 3vw;
+        &__card-1{
+            display: grid;
+            justify-content: center;
+            grid-template-rows: 1fr 1fr 1fr;
+            width: 300px;
+            height: 420px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 22px;
+            grid-area: card01;
+        }
+        &__card-2{
+            display: grid;
+            justify-content: center;
+            grid-template-rows: 1fr 1fr 1fr;
+            width: 300px;
+            height: 420px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 22px;
+            grid-area: card02;
+        }
+        &__card-3{
+            display: grid;
+            justify-content: center;
+            grid-template-rows: 1fr 1fr 1fr;
+            width: 300px;
+            height: 420px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 22px;
+            grid-area: card03;
+        }
+        &__card-4{
+            display: grid;
+            justify-content: center;
+            grid-template-rows: 1fr 1fr 1fr;
+            width: 300px;
+            height: 420px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 22px;
+            grid-area: card04;
+        }
+        &__card__image{
+            margin: 1vw 0 0 0;
+            width: 300px;
+            height: 300px;
+        }
+        &__card__info{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            &__title{
+                display: grid;
+                margin: 0.5vw 0 0 0.5vw;
+                font-size: 30px;
+            }
+            &__price{
+                display: grid;
+                justify-content: end;
+                margin: 0.5vw 1vw 0 0;
+                font-size: 30px;
+            }
+        }
+        &__card__button{
+            display: grid;
+            margin: 0.5vw 0 0 4.5vw;
+            width: 6vw;
+            height: 1.5vw;
+            border-radius: 20px;
+            background: linear-gradient(97.86deg, #89C6FF -38.38%, #3633D0 71.88%);
+            color: #FFFFFF;
+            font-size: 20px;
+            border-style: hidden;
+            transition: all 0.20s linear;
+        -webkit-transition: all 0.20s linear;
+        -moz-transition: all 0.20s linear;
+        position: relative;
+        bottom: 0;
+        box-shadow: 0px 5px 0 #3633D0;
+        &:active{
+            bottom: -5px;
+            box-shadow:0 0 0 #3633D0, inset 0 0 5px rgba(0, 0, 0, 0.4);
+        }
+        }
+    }
+}
+
+/* Termina Mercado NFTs */
+/* Empieza Pie de Pagina Mercado Cripto y NFTs*/
+.pie__de__pagina-2{
+    position: absolute;
+    width: 1853px;
+    height: 370px;
+    margin: 50vw 0 0 0;
+    background: conic-gradient(from 180deg at 50% 50%, #000000 -1.95deg, #C37B1D 11.07deg, #000000 40deg, #DB8A21 97.79deg, #000000 166.91deg, #C37B1D 205.98deg, #000000 269.61deg, #0174CD 337.3deg, #000000 358.05deg, #C37B1D 371.07deg);
+    border-radius: 35px 35px 0px 0px;
+}
+
+.pie__de__pagina__logo-2{
+    position: absolute;
+    width: 265.33px;
+    height: 256px;
+    margin: 4vw 0 0 10vw;
+}
+
+.pie__de__pagina__rectangulo__menu-2{
+    position: absolute;
+    width: 550px;
+    height: 256px;
+    margin: 4vw 0 0 30vw;
+}
+
+.menu__navegacion__pie__de__pagina-2 li a{
+    position: absolute;
+    color: #FFFFFF;
+    line-height: 100px;
+    margin: 5vw 0 0 30vw;
+    font-size: 30px;
+    text-decoration: none;
+    list-style-type: none;
+}
+/* Termina Pie de Pagina Mercado Cripto y NFTs */
+}

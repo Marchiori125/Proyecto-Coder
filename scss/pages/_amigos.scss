@@ -1,0 +1,42 @@
+@media (min-width: 992px){
+    /* Empieza Menu Amigos */
+    
+    .menu__amigos-rectangulo{
+        position: absolute;
+        width: 1450px;
+        height: 830px;
+        left: 250px;
+        top: 169px;
+        background: rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 22px;
+    }
+    
+    .contactos{
+        position: absolute;
+        width: 85px;
+        height: 29px;
+        left: 200px;
+        top: 50px;
+        font-size: 25px;
+    }
+    
+    .mensajes{
+        position: absolute;
+        width: 85px;
+        height: 29px;
+        left: 650px;
+        top: 50px;
+        font-size: 25px;
+    }
+    
+    .solicitudes{
+        position: absolute;
+        width: 85px;
+        height: 29px;
+        left: 1100px;
+        top: 50px;
+        font-size: 25px;
+    }
+    /* Termina Menu Amigos */
+}
