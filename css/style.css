@@ -1,35 +1,13 @@
-<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0; }
 
+@keyframes float {
+  0%, 100% {
+    transform: translate(-10px, -10px); }
+  50% {
+    transform: translate(5px, 10px); } }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  @keyframes float {
-    0%, 100% {
-      transform: translate(-10px, -10px); }
-    50% {
-      transform: translate(5px, 10px); } } }
-=======
 /*!
    * Bootstrap  v5.2.2 (https://getbootstrap.com/)
    * Copyright 2011-2022 The Bootstrap Authors
@@ -10056,4 +10034,3 @@ textarea.form-control-lg {
     top: 50px;
     font-size: 25px; }
   /* Termina Menu Amigos */ }
->>>>>>> b7586dc1f243f22b9fa858b5bcce14126e5fe59b
