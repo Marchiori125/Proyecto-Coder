@@ -23,6 +23,10 @@
     "nodemon": "^2.0.20"
   },
   "dependencies": {
+<<<<<<< HEAD
     "bootstrap": "^5.2.1"
+=======
+    "bootstrap": "^5.2.2"
+>>>>>>> b7586dc1f243f22b9fa858b5bcce14126e5fe59b
   }
 }

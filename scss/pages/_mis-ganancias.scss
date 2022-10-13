@@ -1,0 +1,89 @@
+@media (min-width: 992px){
+    /* Empieza Ganancias Cripto */
+    
+    .ganancias__cripto-rectangulo{
+        position: absolute;
+        width: 1067.56px;
+        height: 759.42px;
+        left: 420.44px;
+        top: 145px;
+        background: rgba(0, 0, 0, 0.76);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 22px;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 30px;
+        padding-top: 5%;
+    }
+    
+    .cripto__venta{
+        position: absolute;
+        width: 1880px;
+        height: 481px;
+        left: -25px;
+        top: 997px;
+        background: rgba(0, 0, 0, 0.93);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 25px;
+        text-align: center;
+    }
+    
+    .cripto-1{
+        position: absolute;
+        left: 200px;
+        top: 200px;
+        font-size: 25px;
+    }
+    
+    .cripto-2{
+        position: absolute;
+        left: 1400px;
+        top: 200px;
+        font-size: 25px;
+    }
+    
+    .boton__vender{
+        position: absolute;
+        width: 130px;
+        height: 45px;
+        left: 853px;
+        top: 300px;
+    }
+    /* Termina Ganancias Cripto */
+    /* Empieza Ganancias NFTs */
+    .ganancias__nfts-rectangulo{
+        position: absolute;
+        width: 1031.4px;
+        height: 759.42px;
+        left: 430px;
+        top: 1570px;
+        background: rgba(0, 0, 0, 0.76);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 22px;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 30px;
+        padding-top: 5%;
+    }
+    
+    .nfts__venta{
+        position: absolute;
+        width: 1880px;
+        height: 481px;
+        left: -25px;
+        top: 2393px;
+        background: rgba(0, 0, 0, 0.76);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 25px;
+        text-align: center;
+        line-height: 100px;
+        font-size: 25px;
+    }
+    
+    .ofertas__nft{
+        position: absolute;
+        left: 300px;
+        top: 200px;
+    }
+    /* Termina Ganancias NFTs */
+}
