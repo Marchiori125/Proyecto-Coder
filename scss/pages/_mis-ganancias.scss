@@ -1,39 +1,196 @@
 @media (min-width: 992px){
     /* Empieza Ganancias Cripto */
     
-    .ganancias__cripto-rectangulo{
+    .main__ganancias__cripto{
+        display: grid;
+        grid-template-areas:
+        "title title title"
+        "card01 card02 card03"
+        "card04 card05 card06"
+        ;
         position: absolute;
         width: 1067.56px;
         height: 759.42px;
-        left: 420.44px;
-        top: 145px;
+        margin: -5vw 0 0 22vw;
         background: rgba(0, 0, 0, 0.76);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 22px;
         text-align: center;
-        color: #FFFFFF;
-        font-size: 30px;
-        padding-top: 5%;
+        padding: 0 0 0 5vw;
+        &__title{
+            margin: 2vw 0 0 -5vw;
+            color: #FFFFFF;
+            font-size: 30px;
+            grid-area: title;
+        }
+        &__card-1{
+            display: grid;
+            grid-template-areas:
+            "logo logo"
+            "currency margin"
+            "quantity quantity"
+            "graph graph";
+            width: 250px;
+            height: 190px;
+            background: linear-gradient(180.23deg, rgba(117, 191, 240, 0.76) 36.57%, rgba(255, 0, 0, 0.516) 117.01%);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            grid-area: card01;
+        }
+        &__card-2{
+            display: grid;
+            grid-template-areas:
+            "logo logo"
+            "currency margin"
+            "quantity quantity"
+            "graph graph";
+            width: 250px;
+            height: 190px;
+            background: linear-gradient(180deg, rgba(117, 191, 240, 0.6) 53.65%, rgba(42, 185, 39, 0.76) 99.99%, rgba(117, 191, 240, 0) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            grid-area: card02;
+        }
+        &__card-3{
+            display: grid;
+            grid-template-areas:
+            "logo logo"
+            "currency margin"
+            "quantity quantity"
+            "graph graph";
+            width: 250px;
+            height: 190px;
+            background: linear-gradient(180.23deg, rgba(117, 191, 240, 0.76) 36.57%, rgba(255, 0, 0, 0.516) 117.01%);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            grid-area: card03;
+        }
+        &__card-4{
+            display: grid;
+            grid-template-areas:
+            "logo logo"
+            "currency margin"
+            "quantity quantity"
+            "graph graph";
+            width: 250px;
+            height: 190px;
+            background: linear-gradient(180deg, rgba(117, 191, 240, 0.6) 53.65%, rgba(42, 185, 39, 0.76) 99.99%, rgba(117, 191, 240, 0) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            grid-area: card04;
+        }
+        &__card-5{
+            display: grid;
+            grid-template-areas:
+            "logo logo"
+            "currency margin"
+            "quantity quantity"
+            "graph graph";
+            width: 250px;
+            height: 190px;
+            background: linear-gradient(180deg, rgba(117, 191, 240, 0.6) 53.65%, rgba(42, 185, 39, 0.76) 99.99%, rgba(117, 191, 240, 0) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            grid-area: card05;
+        }
+        &__currency{
+            display: grid;
+            grid-area: currency;
+            margin: 0 0 0 -3vw;
+        }
+        &__margin{
+            display: grid;
+            grid-area: margin;
+        }
+        &__quantity{
+            display: grid;
+            grid-area: quantity;
+            margin: 0 0 0 -8vw;
+        }
+        &__graph{
+            display: grid;
+            grid-area: graph;
+            margin: -1vw 0 0 1vw;
+        }
+        &__token{
+            width: 70px;
+            height: 70px;
+            margin: -2vw 0 0 4.5vw;
+        }
     }
     
-    .cripto__venta{
+    .main__ganancias__cripto__venta{
         position: absolute;
-        width: 1880px;
+        width: 1902px;
         height: 481px;
-        left: -25px;
-        top: 997px;
+        margin: 40vw 0 0 0;
         background: rgba(0, 0, 0, 0.93);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 25px;
         text-align: center;
+        &__token{
+            position: absolute;
+            width: 387px;
+            height: 240px;
+            margin: 5vw 0 0 8vw;
+            background: rgba(255, 109, 3, 0.6);
+            border: hidden;
+            border-radius: 20px;
+            &__image{
+                width: 85px;
+                height: 85px;
+                margin: -2vw 0 0 0;
+            }
+            &__available{
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+        &__change{
+            font-size: 25px;
+            margin: 7vw 0 0 -4vw;
+        }
+        &__button{
+            position: absolute;
+            width: 130px;
+            height: 45px;
+            margin: 5vw 0 0 -4.5vw;
+            border-radius: 20px;
+            background: linear-gradient(97.86deg, rgba(184, 77, 0, 0.6) -38.38%, rgb(185, 78, 2) 71.88%);
+            color: #FFFFFF;
+            font-size: 20px;
+            border-style: hidden;
+            transition: all 0.20s linear;
+            -webkit-transition: all 0.20s linear;
+            -moz-transition: all 0.20s linear;
+            position: relative;
+            bottom: 0;
+            box-shadow: 0px 5px 0 rgba(216, 50, 0, 0.6);
+            &:active{
+                bottom: -5px;
+                box-shadow:0 0 0 rgba(216, 50, 0, 0.6), inset 0 0 5px rgba(0, 0, 0, 0.4);
+            }
+        }
+        &__to__change{
+            position: absolute;
+            width: 387px;
+            height: 240px;
+            margin: -11vw 0 0 68vw;
+            background: rgba(255, 109, 3, 0.6);
+            border: hidden;
+            border-radius: 20px;
+            &__image{
+                width: 85px;
+                height: 85px;
+                margin: -2vw 0 0 0;
+            }
+            &__available{
+                color: rgba(255, 255, 255, 0.7);
+            }
+        }
+        }
     }
     
-    .cripto-1{
-        position: absolute;
-        left: 200px;
-        top: 200px;
-        font-size: 25px;
-    }
+    
     
     .cripto-2{
         position: absolute;
@@ -41,14 +198,7 @@
         top: 200px;
         font-size: 25px;
     }
-    
-    .boton__vender{
-        position: absolute;
-        width: 130px;
-        height: 45px;
-        left: 853px;
-        top: 300px;
-    }
+
     /* Termina Ganancias Cripto */
     /* Empieza Ganancias NFTs */
     .ganancias__nfts-rectangulo{
@@ -86,4 +236,44 @@
         top: 200px;
     }
     /* Termina Ganancias NFTs */
-}
+    /* Empieza Pie de Pagina */
+    .main__footer__4{
+        margin: 150vw 0 0 0;
+        &__rectangulo{
+            position: absolute;
+            width: 1902px;
+            height: 370px;
+            margin: 0 0 0 0;
+            background: conic-gradient(from 180deg at 50% 50%, #000000 -1.95deg, #C37B1D 11.07deg, #000000 40deg, #DB8A21 97.79deg, #000000 166.91deg, #C37B1D 205.98deg, #000000 269.61deg, #0174CD 337.3deg, #000000 358.05deg, #C37B1D 371.07deg);
+            border-radius: 35px 35px 0px 0px;
+            &__logo{
+                position: absolute;
+                width: 265.33px;
+                height: 256px;
+                margin: 3vw 0 0 4vw;
+            }
+            &__menu__nav{
+                position: absolute;
+                width: 478px;
+                height: 254px;
+                background: #212121;
+                border-radius: 25px;
+                margin: 3vw 0 0 25vw;
+                &__nav{
+                    position: absolute;
+                    width: 300px;
+                    height: 211px;
+                    font-size: 30px;
+                    margin: 0.5vw 0 0 0;
+                    ul{
+                        list-style-type: none;
+                        a{
+                            text-decoration: none;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+    /* Termina Pie de Pagina */
